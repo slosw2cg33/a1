@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	
+	
+	<style>
+			body
+			{
+				background-color: #222222;
+				font-size: 24px;
+				color: gray;
+			}
+		</style>
+	
+	
+	</head>
+	
+<body>
+
+	<center>	
+	<html>
+<head>
+<meta charset="UTF-8">
+ 
+ 
+</head>
+<body>
+ 
+<h1>KWADRAT</h1>
+Podaj długość boku:    <input type="text" id="dlugosc">
+<br>
+ 
+<input id="pole" type="button" name="pole" value="Pole" >
+<div id='wynik'></div>
+ 
+ 
+ <script type="text/javascript">
+  const poleButton  = document.querySelector('#pole');
+  const wynikDiv = document.querySelector('#wynik');
+
+  poleButton.addEventListener('click', pole)
+
+  function pole() {
+    const a= parseInt(document.getElementById("dlugosc").value);
+    const b= a*a;
+        
+    wynikDiv.innerText = pole kwadratu ${b}
+  }
+   
+ 
+</script>
+</html>
+	<h2 id="n2">Schemat blokowy</h2></br>
+	<img src="schemat.png" width="380" height="400">
+	
+	<h2 id="n3">Kod C++</h2>
+	
+	<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #557799">#include &lt;iostream&gt; </span><span style="color: #888888">//</span>
+<span style="color: #333399; font-weight: bold">double</span> wynik, liczba; <span style="color: #888888">// double - liczba zmiennoprzecinkowa</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+{
+    <span style="color: #008800; font-weight: bold">using</span> <span style="color: #008800; font-weight: bold">namespace</span> std;
+    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Podaj liczbę: &quot;</span>;
+    cin <span style="color: #333333">&gt;&gt;</span> liczba;
+    wynik <span style="color: #333333">=</span> liczba<span style="color: #333333">*</span>liczba;
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;liczba &quot;</span> <span style="color: #333333">&lt;&lt;</span> liczba <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; podniesiona do kwadratu wynosi &quot;</span> <span style="color: #333333">&lt;&lt;</span> wynik <span style="color: #333333">&lt;&lt;</span> endl;
+    <span style="color: #008800; font-weight: bold">return</span> wynik;
+}
+</pre></div>
+
+
+
+	<h2 id="n4">Skrypt JS</h2>
+	
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">var</span> a <span style="color: #333333">=</span> prompt(<span style="background-color: #fff0f0">&quot;Podaj a&quot;</span>);
+<span style="color: #008800; font-weight: bold">var</span> a1 <span style="color: #333333">=</span> <span style="color: #007020">parseInt</span>(a);
+
+<span style="color: #008800; font-weight: bold">var</span> wynikpole <span style="color: #333333">=</span> a1 <span style="color: #333333">*</span> a1;
+
+alert(<span style="background-color: #fff0f0">&quot;Pole wynosi &quot;</span> <span style="color: #333333">+</span> wynikpole);
+</pre></div>
+
+
+
+	<h2 id="n5"> Phyton </h2>
+	
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">pole_kwadratu (a):
+<span style="color: #008800; font-weight: bold">print</span> (a<span style="color: #333333">*</span>a)
+</pre></div>
+
+
+	
+</body>
+</html>
